@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSR Fish Stall - Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>BSR Fish Stall Admin Panel</h1>
+
+<div id="admin-panel">
+
+  <h2>Add Fish Item</h2>
+
+  <input type="text" id="fishName" placeholder="Fish Name">
+  <input type="number" id="fishPrice" placeholder="Price">
+  <input type="number" id="fishStock" placeholder="Stock">
+
+  <button id="addFish">Add Fish</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
