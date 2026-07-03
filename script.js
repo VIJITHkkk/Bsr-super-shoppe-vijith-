@@ -3,8 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/fireba
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
 // Firebase Configuration
-const firebaseConfig = {
-   "For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
   apiKey: "AIzaSyB1KKJiGC-x8tVf7eLn-mX3jXjjdoq58n0",
   authDomain: "bsr-fish-stall-2b1d4.firebaseapp.com",
