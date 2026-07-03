@@ -4,12 +4,17 @@ import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/fir
 
 // Firebase Configuration
 const firebaseConfig = {
+   "For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
   apiKey: "AIzaSyB1KKJiGC-x8tVf7eLn-mX3jXjjdoq58n0",
   authDomain: "bsr-fish-stall-2b1d4.firebaseapp.com",
+  databaseURL: "https://bsr-fish-stall-2b1d4-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "bsr-fish-stall-2b1d4",
   storageBucket: "bsr-fish-stall-2b1d4.firebasestorage.app",
   messagingSenderId: "167357195775",
-  appId: "1:167357195775:web:38c1e500d38743b240b3ca"
+  appId: "1:167357195775:web:38c1e500d38743b240b3ca",
+  measurementId: "G-T9WDYZSWVX"
+};"
 };
 
 // Initialize Firebase
