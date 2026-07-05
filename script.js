@@ -27,7 +27,7 @@ document.getElementById("loginBtn").addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       alert("Login Successful");
-      window.location.href = "admin.html";
+      window.location.href = "./admin.html";
     })
     .catch((error) => {
       document.getElementById("message").innerText = error.message;
