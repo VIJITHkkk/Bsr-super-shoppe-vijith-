@@ -1,90 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">wet
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BSR Fish Stall</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<title>BSR SUPER SHOPPE & FISH HUB</title>
 
-body{
-background:#f5f5f5;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-header{
-background:#15b44a;
-color:#fff;
-padding:20px;
-text-align:center;
-font-size:30px;
-font-weight:bold;
-}
-
-.container{
-padding:20px;
-}
-
-.card{
-background:#fff;
-padding:20px;
-margin-bottom:20px;
-border-radius:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.card img{
-width:100%;
-border-radius:12px;
-}
-
-.card h2{
-margin-top:15px;
-font-size:24px;
-}
-
-.price{
-font-size:22px;
-font-weight:bold;
-color:#15b44a;
-margin-top:10px;
-}
-
-button{
-width:100%;
-padding:15px;
-border:none;
-background:#15b44a;
-color:white;
-font-size:20px;
-border-radius:10px;
-margin-top:15px;
-cursor:pointer;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div id="intro">
-  <video id="introVideo" autoplay muted playsinline>
-    <source src="video/intro.mp4" type="video/mp4">
-  </video>
 
-  <button id="skipBtn">Skip Intro</button>
+<!-- ===========================
+     INTRO VIDEO
+=========================== -->
+
+<div id="intro">
+
+    <video id="introVideo" autoplay muted playsinline>
+        <source src="video/intro.mp4" type="video/mp4">
+    </video>
+
+    <button id="skipIntro">
+        Skip
+    </button>
+
 </div>
 
-<div id="mainContent" style="display:none;">
-<header>
-🐟 BSR Fish Stall
+<!-- ===========================
+     MAIN WEBSITE
+=========================== -->
+
+<div id="mainWebsite">
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.png"
+alt="BSR Logo"
+class="logo">
+
+<div>
+
+<h2>
+BSR SUPER SHOPPE
+</h2>
+
+<p>
+& Fish Hub
+</p>
+
+</div>
+
+</div>
+
+<div class="header-icons">
+
+<button class="icon-btn">
+
+🔍
+
+</button>
+
+<button class="icon-btn">
+
+☰
+
+</button>
+
+</div>
+
 </header>
-
-<div class="container">
-
-<div class="card">
-<img src="https
