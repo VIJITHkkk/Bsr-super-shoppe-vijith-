@@ -212,17 +212,7 @@ padding-right:env(safe-area-inset-right);
 }
 /* HERO */
 
-.hero{
-height:420px;
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("images/hero.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-padding:25px;
-color:white;
-}
+
 
 .hero-overlay{
 max-width:500px;
