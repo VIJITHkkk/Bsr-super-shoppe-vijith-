@@ -114,13 +114,21 @@ cursor:pointer;
 /* HERO */
 
 .hero{
-    height:90vh;
+    height:420px;
     background-image:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.55)),
         url("./hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:25px;
+    margin-top:85px;
+}
 }
 .hero-overlay h1{
 font-size:38px;
