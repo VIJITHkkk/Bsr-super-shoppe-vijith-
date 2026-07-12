@@ -274,3 +274,55 @@ color:white;
 background:white;
 color:#0c4d38;
 }
+/* OFFERS */
+
+.offers{
+padding:35px 20px;
+background:#114735;
+}
+
+.offers h2{
+font-size:28px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.offer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.offer-card{
+background:#1a5d45;
+border-radius:18px;
+padding:22px;
+position:relative;
+transition:.3s;
+}
+
+.offer-card:hover{
+transform:translateY(-6px);
+}
+
+.offer-badge{
+position:absolute;
+top:12px;
+right:12px;
+background:#19a34a;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+color:#fff;
+}
+
+.offer-card h3{
+margin-top:25px;
+font-size:22px;
+margin-bottom:8px;
+}
+
+.offer-card p{
+color:#d7f5dd;
+}
