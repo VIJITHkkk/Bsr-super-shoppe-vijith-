@@ -223,7 +223,9 @@ padding-right:env(safe-area-inset-right);
 
 
 .hero-overlay{
-max-width:500px;
+    max-width:500px;
+    position:relative;
+    z-index:2;
 }
 
 .hero-tag{
