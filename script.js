@@ -26,3 +26,16 @@ if (searchBox) {
         console.log("Searching:", this.value);
     });
 }
+const status = document.getElementById("shopStatus");
+
+if (status) {
+    const now = new Date();
+    const hour = now.getHours();
+
+    if (hour >= 9 && hour < 19) {
+        status.innerHTML = "🟢 We are Open (9 AM - 7 PM)";
+    } else {
+        status.innerHTML = "🔴 Shop Closed - Opens Tomorrow at 9 AM";
+        status.classList.add("closed");
+    }
+}
