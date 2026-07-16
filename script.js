@@ -76,4 +76,4 @@ function updateShopStatus(){
 }
 
 updateShopStatus();
-setInterval(updateShopStatus,1000);
+setInterval(updateShopStatus, 1000);
