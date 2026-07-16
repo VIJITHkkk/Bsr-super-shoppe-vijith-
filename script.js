@@ -39,31 +39,41 @@ if (searchBox) {
 // SHOP STATUS
 // ===========================
 
-const status = document.getElementById("shopStatus");
-const orderBtn = document.querySelector(".order-btn");
+const shopStatus = document.getElementById("shopStatus");
 
-if (status) {
+function updateShopStatus(){
+
+    if(!shopStatus) return;
 
     const now = new Date();
     const hour = now.getHours();
+    const minute = now.getMinutes();
 
-    if (hour >= 9 && hour < 19) {
+    let displayHour = hour % 12;
+    if(displayHour === 0) displayHour = 12;
 
-        status.innerHTML = "🟢 We are Open (9 AM - 7 PM)";
-        status.classList.remove("closed");
+    const ampm = hour >= 12 ? "PM" : "AM";
+    const time =
+        displayHour + ":" +
+        String(minute).padStart(2,"0") +
+        " " + ampm;
 
-    } else {
+    if(hour >= 9 && hour < 19){
 
-        status.innerHTML = "🔴 Shop Closed - Opens Tomorrow at 9 AM";
-        status.classList.add("closed");
+        shopStatus.className="shop-status open";
+        shopStatus.innerHTML =
+        `<span class="dot"></span>
+        🟢 OPEN NOW | ${time}`;
 
-        if (orderBtn) {
-            orderBtn.disabled = true;
-            orderBtn.innerHTML = "Shop Closed";
-            orderBtn.style.opacity = "0.6";
-            orderBtn.style.cursor = "not-allowed";
-        }
+    }else{
+
+        shopStatus.className="shop-status closed";
+        shopStatus.innerHTML =
+        `<span class="dot"></span>
+        🔴 CLOSED | ${time}`;
 
     }
-
 }
+
+updateShopStatus();
+setInterval(updateShopStatus,1000);
