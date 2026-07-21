@@ -1,5 +1,5 @@
 // ===========================
-// INTRO VIDEO
+// INTRO VIDEO (Only First Time)
 // ===========================
 
 const intro = document.getElementById("intro");
@@ -7,20 +7,33 @@ const mainWebsite = document.getElementById("mainWebsite");
 const introVideo = document.getElementById("introVideo");
 const skipIntro = document.getElementById("skipIntro");
 
-function showWebsite() {
+if (localStorage.getItem("introPlayed") === "yes") {
+
     intro.style.display = "none";
     mainWebsite.style.display = "block";
-}
 
-if (introVideo) {
-    introVideo.addEventListener("ended", showWebsite);
-}
+} else {
 
-if (skipIntro) {
-    skipIntro.addEventListener("click", () => {
-        introVideo.pause();
-        showWebsite();
+    introVideo.addEventListener("ended", function () {
+
+        localStorage.setItem("introPlayed", "yes");
+
+        intro.style.display = "none";
+        mainWebsite.style.display = "block";
+
     });
+
+    skipIntro.addEventListener("click", function () {
+
+        introVideo.pause();
+
+        localStorage.setItem("introPlayed", "yes");
+
+        intro.style.display = "none";
+        mainWebsite.style.display = "block";
+
+    });
+
 }
 
 // ===========================
