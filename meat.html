@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meat | BSR SUPER SHOPPE</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    margin:0;
+    background:#0d3b2e;
+    color:#fff;
+    font-family:Poppins,sans-serif;
+}
+
+.header{
+    background:#114735;
+    padding:20px;
+    text-align:center;
+}
+
+.back-btn{
+    display:inline-block;
+    margin:20px;
+    padding:10px 20px;
+    background:#19a34a;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#175741;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.order-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#19a34a;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>🍗 Meat</h2>
+</div>
+
+<a href="index.html" class="back-btn">⬅ Back Home</a>
+
+<div class="products">
+
+<!-- Live Chicken -->
+
+<div class="card">
+
+<img src="hero.jpg">
+
+<h3>🐔 Live Chicken</h3>
+
+<div class="price">₹150 / KG</div>
+
+<select id="weight">
+<option>Expected Weight</option>
+<option>1 KG</option>
+<option>1.5 KG</option>
+<option>2 KG</option>
+<option>2.5 KG</option>
+<option>3 KG</option>
+<option>3.5 KG</option>
+<option>4 KG</option>
+</select>
+
+<button class="order-btn"
+onclick="liveChickenOrder()">
+Order Live Chicken
+</button>
+
+</div>
+
+<!-- Chicken Meat -->
+
+<div class="card">
+
+<img src="hero.jpg">
+
+<h3>🍗 Chicken Meat</h3>
+
+<div class="price">₹250 / KG</div>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Chicken Meat')">
+Order
+</button>
+
+</div>
+
+<!-- Beef -->
+
+<div class="card">
+
+<img src="hero.jpg">
+
+<h3>🥩 Beef</h3>
+
+<div class="price">₹440 / KG</div>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Beef')">
+Order
+</button>
+
+</div>
+
+<!-- Mutton -->
+
+<div class="card">
+
+<img src="hero.jpg">
+
+<h3>🐑 Mutton</h3>
+
+<div class="price">₹900 / KG</div>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Mutton')">
+Order
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function liveChickenOrder(){
+
+const weight=document.getElementById("weight").value;
+
+window.open(
+"https://wa.me/918891416068?text=I want Live Chicken. Expected Weight : "+weight
+);
+
+}
+
+</script>
+
+</body>
+</html>
