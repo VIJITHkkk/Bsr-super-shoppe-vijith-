@@ -509,3 +509,14 @@ line-height:1.6;
         transform:translateY(0);
     }
 }
+.shop-status{
+    width:90%;
+    max-width:500px;
+    margin:100px auto 20px;
+    padding:15px 20px;
+    text-align:center;
+    border-radius:15px;
+    font-weight:700;
+    background:#175741;
+    color:#fff;
+}
