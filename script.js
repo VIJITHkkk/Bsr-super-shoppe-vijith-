@@ -77,3 +77,20 @@ function updateShopStatus(){
 
 updateShopStatus();
 setInterval(updateShopStatus, 1000);
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+
+if (menuBtn && sideMenu) {
+    menuBtn.addEventListener("click", () => {
+        sideMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (
+            !sideMenu.contains(e.target) &&
+            !menuBtn.contains(e.target)
+        ) {
+            sideMenu.classList.remove("active");
+        }
+    });
+}
