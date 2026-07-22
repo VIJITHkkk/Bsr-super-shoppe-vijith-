@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piece Fish | BSR SUPER SHOPPE</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+margin:0;
+background:#0d3b2e;
+color:#fff;
+font-family:Poppins,sans-serif;
+}
+
+.header{
+background:#114735;
+padding:20px;
+text-align:center;
+}
+
+.back-btn{
+display:block;
+width:fit-content;
+margin:20px auto;
+padding:10px 20px;
+background:#19a34a;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#175741;
+border-radius:18px;
+padding:20px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.card h3{
+margin:15px 0 10px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+select{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.order-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:30px;
+background:#19a34a;
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>🐠 Piece Fish | കട്ട് ചെയ്ത മത്സ്യം</h2>
+</div>
+
+<a href="index.html" class="back-btn">⬅ Back Home | ഹോം</a>
+
+<div class="products">
+
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 Kerra Piece<br><small>കേര കഷ്ണം</small></h3>
+<div class="price">₹--- / KG</div>
+
+<select>
+<option>250 g</option>
+<option>500 g</option>
+<option>750 g</option>
+<option selected>1 KG</option>
+<option>2 KG</option>
+</select>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Kerra Piece')">
+Order
+</button>
+</div>
+
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 Moda Piece<br><small>മോദ കഷ്ണം</small></h3>
+<div class="price">₹--- / KG</div>
+
+<select>
+<option>250 g</option>
+<option>500 g</option>
+<option>750 g</option>
+<option selected>1 KG</option>
+<option>2 KG</option>
+</select>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Moda Piece')">
+Order
+</button>
+</div>
+
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 Para Piece<br><small>പാറ കഷ്ണം</small></h3>
+<div class="price">₹--- / KG</div>
+
+<select>
+<option>250 g</option>
+<option>500 g</option>
+<option>750 g</option>
+<option selected>1 KG</option>
+<option>2 KG</option>
+</select>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Para Piece')">
+Order
+</button>
+</div>
+
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 Neymeen Piece<br><small>നെയ്മീൻ കഷ്ണം</small></h3>
+<div class="price">₹--- / KG</div>
+
+<select>
+<option>250 g</option>
+<option>500 g</option>
+<option>750 g</option>
+<option selected>1 KG</option>
+<option>2 KG</option>
+</select>
+
+<button class="order-btn"
+onclick="window.open('https://wa.me/918891416068?text=I want Neymeen Piece')">
+Order
+</button>
+</div>
+
+</div>
+
+</body>
+</html>
