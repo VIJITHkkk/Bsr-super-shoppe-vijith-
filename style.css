@@ -572,20 +572,35 @@ line-height:1.6;
 }
 
 .logo-area h2{
-    font-size:16px;
+    font-size:15px;
 }
 
 .logo-area p{
     font-size:11px;
 }
 
+.search-section{
+    padding:15px;
+}
+
+#searchBox{
+    padding:14px;
+    font-size:15px;
+}
+
 .hero{
-    height:520px;
-    margin-top:80px;
+    height:430px;
+    margin-top:75px;
+    padding:20px;
+    background-position:center;
+}
+
+.hero-tag{
+    font-size:12px;
 }
 
 .hero h1{
-    font-size:28px;
+    font-size:30px;
 }
 
 .hero p{
@@ -594,12 +609,56 @@ line-height:1.6;
 
 .hero-buttons{
     flex-direction:column;
-    gap:10px;
+    gap:12px;
 }
 
 .order-btn,
 .view-btn{
     width:100%;
+}
+
+.offers h2,
+.featured-products h2,
+.services h2{
+    font-size:24px;
+}
+
+.offer-grid,
+.product-grid,
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+.product-card img{
+    height:220px;
+}
+
+.categories{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:15px;
+}
+
+.category-card{
+    padding:20px 10px;
+    font-size:16px;
+}
+
+.category-card span{
+    font-size:14px;
+}
+
+.shop-status{
+    width:95%;
+    margin:90px auto 15px;
+}
+
+.whatsapp-float{
+    width:55px;
+    height:55px;
+    font-size:28px;
+    right:15px;
+    bottom:15px;
 }
 
 .header-icons{
