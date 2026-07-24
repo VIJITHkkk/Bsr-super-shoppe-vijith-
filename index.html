@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>BSR SUPER SHOPPE & FISH HUB</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+    <video id="introVideo" autoplay muted playsinline>
+        <source src="video/intro.mp4" type="video/mp4">
+    </video>
+
+    <button id="skipIntro">Skip</button>
+</div>
+
+<!-- WEBSITE -->
+<div id="mainWebsite">
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="logo-area">
+        <img src="logo.png" alt="BSR Logo" class="logo">
+
+        <div>
+            <h2>BSR SUPER SHOPPE</h2>
+            <p>& Fish Hub</p>
+        </div>
+    </div>
+
+    <div class="header-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn" id="menuBtn">☰</button>
+    </div>
+
+</header>
+
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+
+<a href="index.html">🏠 Home</a>
+<a href="fish.html">🐟 Fresh Fish</a>
+<a href="meat.html">🍗 Meat</a>
+<a href="piece-fish.html">🐠 Piece Fish</a>
+<a href="dry-fish.html">🦐 Dry Fish</a>
+<a href="#featured">⭐ Featured Products</a>
+<a href="https://wa.me/918891416068" target="_blank">💬 WhatsApp</a>
+
+</div>
+
+<!-- SHOP STATUS -->
+<div id="shopStatus" class="shop-status">
+Loading...
+</div>
+
+<!-- SEARCH -->
+<section class="search-section">
+<input
+type="text"
+id="searchBox"
+placeholder="Search Fish, Meat...">
+</section>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="hero-overlay">
+
+<span class="hero-tag">🐟 Fresh Every Day</span>
+
+<h1>Fresh Fish & Meat</h1>
+
+<p>
+Premium Quality Delivered to Your Doorstep
+</p>
+
+<div class="hero-buttons">
+<button class="order-btn">Order Now</button>
+<button class="view-btn">View Products</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- OFFERS -->
+<section class="offers">
+
+<h2>🔥 Today's Offers</h2>
+
+<div class="offer-grid">
+
+<div class="offer-card">
+<span class="offer-badge">20% OFF</span>
+<h3>Fresh Fish</h3>
+<p>Premium Quality Fish</p>
+</div>
+
+<div class="offer-card">
+<span class="offer-badge">BEST SELLER</span>
+<h3>Chicken Meat</h3>
+<p>Fresh & Hygienic</p>
+</div>
+
+<div class="offer-card">
+<span class="offer-badge">TODAY</span>
+<h3>Dry Fish</h3>
+<p>Special Discount</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+
+<div class="category-card" onclick="location.href='fish.html'">
+🐟
+<span>Fresh Fish<br><small>പുതിയ മത്സ്യം</small></span>
+</div>
+
+<div class="category-card" onclick="location.href='meat.html'">
+🍗
+<span>Meat<br><small>മാംസം</small></span>
+</div>
+
+<div class="category-card" onclick="location.href='piece-fish.html'">
+🐠
+<span>Piece Fish<br><small>കട്ട് ചെയ്ത മത്സ്യം</small></span>
+</div>
+
+<div class="category-card" onclick="location.href='dry-fish.html'">
+🦐
+<span>Dry Fish<br><small>ഉണക്കമീൻ</small></span>
+</div>
+
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section id="featured" class="featured-products">
+
+<h2>⭐ Featured Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="hero.jpg" alt="Fresh Fish">
+<h3>Fresh Fish<br><small>പുതിയ മത്സ്യം</small></h3>
+<p>Starting from ₹220 / KG</p>
+<button onclick="location.href='fish.html'">View Products</button>
+</div>
+
+<div class="product-card">
+<img src="hero.jpg" alt="Chicken Meat">
+<h3>Chicken Meat<br><small>കോഴിയിറച്ചി</small></h3>
+<p>Starting from ₹250 / KG</p>
+<button onclick="location.href='meat.html'">View Products</button>
+</div>
+
+<div class="product-card">
+<img src="hero.jpg" alt="Piece Fish">
+<h3>Piece Fish<br><small>കട്ട് ചെയ്ത മത്സ്യം</small></h3>
+<p>Premium Cut Fish</p>
+<button onclick="location.href='piece-fish.html'">View Products</button>
+</div>
+
+<div class="product-card">
+<img src="hero.jpg" alt="Dry Fish">
+<h3>Dry Fish<br><small>ഉണക്കമീൻ</small></h3>
+<p>Best Quality Dry Fish</p>
+<button onclick="location.href='dry-fish.html'">View Products</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+
+<h2>Why Choose Us?</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-icon">🐟</div>
+<h3>100% Fresh</h3>
+<p>Fresh fish delivered every day.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🚚</div>
+<h3>Fast Delivery</h3>
+<p>Quick home delivery.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">💳</div>
+<h3>Secure Payment</h3>
+<p>Safe and easy payment.</p>
+</div>
+
+<div class="service-card">
+<div class="service-icon">⭐</div>
+<h3>Best Quality</h3>
+<p>Premium quality products.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<p>© 2026 BSR SUPER SHOPPE & FISH HUB</p>
+</footer>
+
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/918891416068?text=Hello%20BSR%20Super%20Shoppe,%20I%20want%20to%20place%20an%20order."
+class="whatsapp-float"
+target="_blank">
+💬
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
