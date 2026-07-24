@@ -579,18 +579,9 @@ line-height:1.6;
     font-size:11px;
 }
 
-.header-icons{
-    gap:8px;
-}
-
-.icon-btn{
-    width:42px;
-    height:42px;
-}
-
 .hero{
     height:520px;
-    padding:20px;
+    margin-top:80px;
 }
 
 .hero h1{
@@ -609,6 +600,15 @@ line-height:1.6;
 .order-btn,
 .view-btn{
     width:100%;
+}
+
+.header-icons{
+    gap:8px;
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
 }
 
 }
