@@ -559,75 +559,52 @@ line-height:1.6;
 
 .side-menu a:hover{
     background:#19a34a;
-}
-@media (max-width:768px){
+/* ===== Desktop Layout on Mobile ===== */
 
-.header{
-    padding:12px 15px;
-/* MOBILE FIX */
-@media screen and (max-width:768px){
-
-.header{
-    padding:12px 15px;
+html,
+body{
+    min-width:1200px;
+    overflow-x:auto;
 }
 
-.logo{
-    width:50px;
-    height:50px;
+#mainWebsite{
+    width:1200px;
+    margin:0 auto;
 }
 
-.logo-area h2{
-    font-size:16px;
-}
-
-.logo-area p{
-    font-size:11px;
+.header,
+.hero,
+.search-section,
+.offers,
+.categories,
+.featured-products,
+.services,
+.footer{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .hero{
-    margin-top:80px;
-    min-height:100vh;
-    height:auto;
-    padding:35px 20px;
-    align-items:center;
-}
-
-.hero-overlay{
-    width:100%;
+    height:650px;
 }
 
 .hero h1{
-    font-size:48px;
-    line-height:1.1;
+    font-size:72px;
 }
 
 .hero p{
-    font-size:18px;
-    line-height:1.7;
+    font-size:28px;
 }
 
-.hero-buttons{
-    flex-direction:column;
-    gap:12px;
+.product-grid{
+    grid-template-columns:repeat(4,1fr);
 }
 
-.order-btn,
-.view-btn{
-    width:100%;
+.offer-grid{
+    grid-template-columns:repeat(3,1fr);
 }
 
-.shop-status{
-    margin:95px auto 20px;
-    width:92%;
-}
-
-.header-icons{
-    gap:10px;
-}
-
-.icon-btn{
-    width:46px;
-    height:46px;
-}
-
+.categories{
+    grid-template-columns:repeat(4,1fr);
 }
