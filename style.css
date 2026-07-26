@@ -608,3 +608,44 @@ body{
 .categories{
     grid-template-columns:repeat(4,1fr);
 }
+.admin-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:90%;
+    max-width:400px;
+    background:#175741;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+.login-box h2{
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    box-sizing:border-box;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
