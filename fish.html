@@ -350,6 +350,19 @@ Order
     </button>
 </div>
 </div>
+</div>
+
+<script>
+function updateTotal(select, price){
+
+    let qty = parseFloat(select.value);
+
+    let total = qty * price;
+
+    select.parentElement.querySelector(".total span").innerText = total;
+
+}
+</script>
 
 </body>
 </html>
