@@ -167,214 +167,563 @@ Order Now
 </div>
 
 <div class="card">
-<img src="hero.jpg">
-<h3>Karimeen</h3>
-<div class="price">₹600 / KG</div>
-  <label><b>Quantity | അളവ്</b></label>
 
-<select id="qtyfish">
-    <option>250 g</option>
-    <option>500 g</option>
-    <option>750 g</option>
-    <option selected>1 KG</option>
-    <option>1.5 KG</option>
-    <option>2 KG</option>
-    <option>3 KG</option>
-    <option>5 KG</option>
-</select>
-<div class="note">
-Delivery charge is not included in this bill.
-</div>
+<img src="hero.jpg" alt="Mathi">
 
-<button class="order-btn">
-Order Now
-</button>
+<h3>🐟 Mathi<br><small>മത്തി</small></h3>
 
-</div>
-
-
-</div>
-<div class="card">
-<img src="hero.jpg">
-<h3>🐟 Kilivarand<br><small>കിളിവരണ്ട</small></h3>
-<div class="price">₹240 / KG</div>
+<div class="price">₹180 / KG</div>
 
 <label><b>Quantity | അളവ്</b></label>
-<select>
-<option>250 g</option>
-<option>500 g</option>
-<option selected>1 KG</option>
-<option>2 KG</option>
+
+<select onchange="updateTotal(this,180)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+<option value="3">3 KG</option>
+<option value="5">5 KG</option>
 </select>
 
 <div class="total">
-Total : ₹<span>220</span>
+Total : ₹<span>180</span>
 </div>
 
 <div class="note">
 Delivery charge is not included in this bill.
 </div>
 
-<button class="order-btn">
+<button class="order-btn" onclick="orderFish('Mathi',180,this)">
 Order Now
 </button>
 
 </div>
-  <div class="card">
-<img src="hero.jpg">
+<div class="card">
+
+<img src="hero.jpg" alt="Karimeen">
+
+<h3>🐟 Karimeen<br><small>കരിമീൻ</small></h3>
+
+<div class="price">₹650 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,650)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">
+Total : ₹<span>650</span>
+</div>
+
+<div class="note">
+Delivery charge is not included in this bill.
+</div>
+
+<button class="order-btn" onclick="orderFish('Karimeen',650,this)">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="hero.jpg" alt="Kilivarand">
+
+<h3>🐟 Kilivarand<br><small>കിളിവരണ്ട</small></h3>
+
+<div class="price">₹240 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,240)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">
+Total : ₹<span>240</span>
+</div>
+
+<div class="note">
+Delivery charge is not included in this bill.
+</div>
+
+<button class="order-btn" onclick="orderFish('Kilivarand',240,this)">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="hero.jpg" alt="Kakka">
+
+<h3>🦪 Kakka<br><small>കക്ക</small></h3>
+
+<div class="price">₹320 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,320)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">
+Total : ₹<span>320</span>
+</div>
+
+<div class="note">
+Delivery charge is not included in this bill.
+</div>
+
+<button class="order-btn" onclick="orderFish('Kakka',320,this)">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="hero.jpg" alt="Konju">
+
+<h3>🦐 Konju<br><small>കൊഞ്ച്</small></h3>
+
+<div class="price">₹650 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,650)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">
+Total : ₹<span>650</span>
+</div>
+
+<div class="note">
+Delivery charge is not included in this bill.
+</div>
+
+<button class="order-btn" onclick="orderFish('Konju',650,this)">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="hero.jpg" alt="Netholi">
+
+<h3>🐟 Netholi<br><small>നെത്തോലി</small></h3>
+
+<div class="price">₹140 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,140)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>140</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Netholi',140,this)">
+Order Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="hero.jpg" alt="Vilameen">
+
 <h3>🐟 Vilameen<br><small>വിളമീൻ</small></h3>
+
 <div class="price">₹500 / KG</div>
 
 <label><b>Quantity | അളവ്</b></label>
-<select>
-<option>250 g</option>
-<option>500 g</option>
-<option selected>1 KG</option>
-<option>2 KG</option>
+
+<select onchange="updateTotal(this,500)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
 </select>
 
- <div class="total">
-Total : ₹<span>220</span>
-</div>
+<div class="total">Total : ₹<span>500</span></div>
 
-<div class="note">
-Delivery charge is not included in this bill.
-</div>
+<div class="note">Delivery charge is not included in this bill.</div>
 
-<button class="order-btn">
+<button class="order-btn" onclick="orderFish('Vilameen',500,this)">
 Order Now
 </button>
 
 </div>
-  <!-- Chala -->
 <div class="card">
-    <img src="hero.jpg">
-    <h3>ചാള<br><small>Chala</small></h3>
 
-    <div class="price">₹280 / KG</div>
+<img src="hero.jpg" alt="Chala">
 
-    <label><b>Quantity | അളവ്</b></label>
-    <select>
-        <option>250 g</option>
-        <option>500 g</option>
-        <option>750 g</option>
-        <option selected>1 KG</option>
-        <option>1.5 KG</option>
-        <option>2 KG</option>
-    </select>
+<h3>🐟 Chala<br><small>ചാള</small></h3>
 
-   <div  class="total">
-Total : ₹<span>220</span>
-</div>
+<div class="price">₹280 / KG</div>
 
-<div class="note">
-Delivery charge is not included in this bill.
-</div>
+<label><b>Quantity | അളവ്</b></label>
 
-<button class="order-btn">
+<select onchange="updateTotal(this,280)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>280</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Chala',280,this)">
 Order Now
 </button>
 
 </div>
-
-<!-- Konju -->
 <div class="card">
-    <img src="hero.jpg">
-    <h3>കൊഞ്ച്<br><small>Prawn</small></h3>
 
-    <div class="price">₹600 / KG</div>
+<img src="hero.jpg" alt="Vankada">
 
-    <label><b>Quantity | അളവ്</b></label>
-    <select>
-        <option>250 g</option>
-        <option>500 g</option>
-        <option>750 g</option>
-        <option selected>1 KG</option>
-        <option>1.5 KG</option>
-        <option>2 KG</option>
-    </select>
-  
-<div  class="total">
-Total : ₹<span>220</span>
-</div>
+<h3>🐟 Vankada<br><small>വങ്കട</small></h3>
 
-<div class="note">
-Delivery charge is not included in this bill.
-</div>
+<div class="price">₹220 / KG</div>
 
-<button class="order-btn">
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,220)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>220</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Vankada',220,this)">
 Order Now
 </button>
 
 </div>
-
-<!-- Vankada -->
 <div class="card">
-    <img src="hero.jpg">
-    <h3>വങ്കട<br><small>Vankada</small></h3>
 
-    <div class="price">₹200 / KG</div>
+<img src="hero.jpg" alt="Thedu">
 
-    <label><b>Quantity | അളവ്</b></label>
-    <select>
-        <option>250 g</option>
-        <option>500 g</option>
-        <option>750 g</option>
-        <option selected>1 KG</option>
-        <option>1.5 KG</option>
-        <option>2 KG</option>
-    </select>
+<h3>🐟 Thedu<br><small>തേട്</small></h3>
 
-    <div class="note">
-Delivery charge is not included in this bill.
-</div>
+<div class="price">₹180 / KG</div>
 
-<button class="order-btn">
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,180)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>180</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Thedu',180,this)">
 Order Now
 </button>
 
 </div>
-
-
-<!-- Thedu -->
 <div class="card">
-    <img src="hero.jpg">
-    <h3>തേട്<br><small>Thedu</small></h3>
 
-    <div class="price">₹160 / KG</div>
+<img src="hero.jpg" alt="Chemballi">
 
-    <label><b>Quantity | അളവ്</b></label>
-    <select>
-        <option>250 g</option>
-        <option>500 g</option>
-        <option>750 g</option>
-        <option selected>1 KG</option>
-        <option>1.5 KG</option>
-        <option>2 KG</option>
-    </select>
-<div class="note">
-Delivery charge is not included in this bill.
-</div>
+<h3>🐟 Chemballi<br><small>ചെമ്പള്ളി</small></h3>
 
-<button class="order-btn">
+<div class="price">₹350 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,350)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>350</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Chemballi',350,this)">
 Order Now
 </button>
 
 </div>
+<div class="card">
+<img src="hero.jpg" alt="Choora">
+<h3>🐟 ചൂര</h3>
+<div class="price">₹340 / KG</div>
 
- 
+<label><b>Quantity | അളവ്</b></label>
+<select onchange="updateTotal(this,340)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>340</span></div>
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Choora',340,this)">Order Now</button>
 </div>
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 ആറ്റുവാള</h3>
+<div class="price">₹160 / KG</div>
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,160)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>160</span></div>
+<div class="note">Delivery charge is not included in this bill.</div>
+<button class="order-btn" onclick="orderFish('Aattuvala',160,this)">Order Now</button>
 </div>
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 സിലോപിയ</h3>
+<div class="price">₹200 / KG</div>
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,200)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>200</span></div>
+<div class="note">Delivery charge is not included in this bill.</div>
+<button class="order-btn" onclick="orderFish('Silopia',200,this)">Order Now</button>
+</div>
+<div class="card">
+<img src="hero.jpg">
+<h3>🐟 കോഴിചാള</h3>
+<div class="price">₹200 / KG</div>
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,200)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>200</span></div>
+<div class="note">Delivery charge is not included in this bill.</div>
+<button class="order-btn" onclick="orderFish('Kozhichala',200,this)">Order Now</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Urulan Para">
+
+<h3>🐟 ഉരുളൻപാറ</h3>
+
+<div class="price">₹400 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,400)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="1.5">1.5 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>400</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Urulan Para',400,this)">
+Order Now
+</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Aila">
+
+<h3>🐟 ഐല</h3>
+
+<div class="price">₹300 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,300)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="0.75">750 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>300</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Aila',300,this)">
+Order Now
+</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Kann Aila">
+
+<h3>🐟 കണ്ണ് ഐല</h3>
+
+<div class="price">₹300 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,300)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>300</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Kann Aila',300,this)">
+Order Now
+</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Vellakanni">
+
+<h3>🐟 വെള്ളാക്കണ്ണി</h3>
+
+<div class="price">₹160 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,160)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>160</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Vellakanni',160,this)">
+Order Now
+</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Kannadi Para">
+
+<h3>🐟 കണ്ണാടിപാറ</h3>
+
+<div class="price">₹300 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,300)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>300</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Kannadi Para',300,this)">
+Order Now
+</button>
+</div>
+<div class="card">
+<img src="hero.jpg" alt="Nank">
+
+<h3>🐟 നങ്ക്</h3>
+
+<div class="price">₹200 / KG</div>
+
+<label><b>Quantity | അളവ്</b></label>
+
+<select onchange="updateTotal(this,200)">
+<option value="0.25">250 g</option>
+<option value="0.5">500 g</option>
+<option value="1" selected>1 KG</option>
+<option value="2">2 KG</option>
+</select>
+
+<div class="total">Total : ₹<span>200</span></div>
+
+<div class="note">Delivery charge is not included in this bill.</div>
+
+<button class="order-btn" onclick="orderFish('Nank',200,this)">
+Order Now
+</button>
+</div>
+</div> <!-- grid close -->
 
 <script>
 function updateTotal(select, price){
-
     let qty = parseFloat(select.value);
-
     let total = qty * price;
+    select.parentElement.querySelector(".total span").innerText = total.toFixed(0);
+}
 
-    select.parentElement.querySelector(".total span").innerText = total;
+function orderFish(name, price, btn){
+    let card = btn.parentElement;
+    let qty = card.querySelector("select").value;
+    let total = card.querySelector(".total span").innerText;
 
+    let message =
+`Hello BSR SUPER SHOPPE,
+
+Fish : ${name}
+Quantity : ${qty} KG
+Total : ₹${total}
+
+Please confirm my order.`;
+
+    window.open("https://wa.me/918891416068?text=" + encodeURIComponent(message));
 }
 </script>
 
