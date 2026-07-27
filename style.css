@@ -650,3 +650,39 @@ body{
     font-weight:bold;
     cursor:pointer;
 }
+.admin-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#admin-panel{
+    width:90%;
+    max-width:420px;
+    background:#175741;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+#admin-panel input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+#admin-panel button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+}
