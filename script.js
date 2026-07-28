@@ -128,7 +128,7 @@ function adminLogin() {
     ) {
 
         localStorage.setItem("adminLoggedIn", "true");
-        window.location.href = "admin.html";
+        window.location.replace("admin.html");
 
     } else {
 
