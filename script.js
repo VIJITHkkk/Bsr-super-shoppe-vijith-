@@ -27,15 +27,16 @@ if (intro && mainWebsite && introVideo && skipIntro) {
         skipIntro.addEventListener("click", function () {
 
             introVideo.pause();
+
             localStorage.setItem("introPlayed", "yes");
+
             intro.style.display = "none";
             mainWebsite.style.display = "block";
 
         });
-
     }
-
 }
+
 
 // ===========================
 // SEARCH
@@ -44,10 +45,15 @@ if (intro && mainWebsite && introVideo && skipIntro) {
 const searchBox = document.getElementById("searchBox");
 
 if (searchBox) {
+
     searchBox.addEventListener("keyup", function () {
+
         console.log("Searching:", this.value);
+
     });
+
 }
+
 
 // ===========================
 // SHOP STATUS
@@ -60,30 +66,51 @@ function updateShopStatus() {
     if (!shopStatus) return;
 
     const now = new Date();
+
     const hour = now.getHours();
     const minute = now.getMinutes();
 
     let displayHour = hour % 12;
-    if (displayHour === 0) displayHour = 12;
+
+    if (displayHour === 0) {
+        displayHour = 12;
+    }
 
     const ampm = hour >= 12 ? "PM" : "AM";
-    const time = displayHour + ":" + String(minute).padStart(2, "0") + " " + ampm;
+
+    const time =
+        displayHour +
+        ":" +
+        String(minute).padStart(2, "0") +
+        " " +
+        ampm;
+
+
+    // SHOP OPEN TIME
+    // 9:00 AM - 7:00 PM
 
     if (hour >= 9 && hour < 19) {
 
         shopStatus.className = "shop-status open";
-        shopStatus.innerHTML = `<span class="dot"></span> 🟢 OPEN NOW | ${time}`;
+
+        shopStatus.innerHTML =
+            `<span class="dot"></span> 🟢 OPEN NOW | ${time}`;
 
     } else {
 
         shopStatus.className = "shop-status closed";
-        shopStatus.innerHTML = `<span class="dot"></span> 🔴 CLOSED | ${time}`;
+
+        shopStatus.innerHTML =
+            `<span class="dot"></span> 🔴 CLOSED | ${time}`;
 
     }
+
 }
 
 updateShopStatus();
+
 setInterval(updateShopStatus, 1000);
+
 
 // ===========================
 // SIDE MENU
@@ -95,18 +122,27 @@ const sideMenu = document.getElementById("sideMenu");
 if (menuBtn && sideMenu) {
 
     menuBtn.addEventListener("click", () => {
+
         sideMenu.classList.toggle("active");
+
     });
+
 
     document.addEventListener("click", (e) => {
 
-        if (!sideMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        if (
+            !sideMenu.contains(e.target) &&
+            !menuBtn.contains(e.target)
+        ) {
+
             sideMenu.classList.remove("active");
+
         }
 
     });
 
 }
+
 
 // ===========================
 // ADMIN LOGIN
@@ -122,12 +158,17 @@ function adminLogin() {
 
     if (!username || !password) return;
 
+
     if (
         username.value === ADMIN_USERNAME &&
         password.value === ADMIN_PASSWORD
     ) {
 
-        localStorage.setItem("adminLoggedIn", "true");
+        localStorage.setItem(
+            "adminLoggedIn",
+            "true"
+        );
+
         window.location.replace("admin.html");
 
     } else {
@@ -137,4 +178,59 @@ function adminLogin() {
     }
 
 }
+
 window.adminLogin = adminLogin;
+
+
+// ===========================
+// FISH STOCK CONTROL
+// ===========================
+
+function setOutOfStock(card, isOut) {
+
+    if (!card) return;
+
+
+    const orderBtn =
+        card.querySelector(".order-btn");
+
+    const select =
+        card.querySelector("select");
+
+    const outStock =
+        card.querySelector(".out-stock");
+
+
+    if (!orderBtn || !select || !outStock) {
+        return;
+    }
+
+
+    if (isOut) {
+
+        // Hide quantity selection
+        select.style.display = "none";
+
+        // Hide order button
+        orderBtn.style.display = "none";
+
+        // Show Out of Stock
+        outStock.style.display = "block";
+
+    } else {
+
+        // Show quantity selection
+        select.style.display = "block";
+
+        // Show order button
+        orderBtn.style.display = "block";
+
+        // Hide Out of Stock
+        outStock.style.display = "none";
+
+    }
+
+}
+
+
+window.setOutOfStock = setOutOfStock;
